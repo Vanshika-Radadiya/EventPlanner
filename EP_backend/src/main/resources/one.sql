@@ -1,0 +1,5 @@
+insert into userd (id, mobile, a_role,address,email, name, password,user_type) values(2, 222222, 'singer', 'ahmedabad', 'a@gamil.com', 'abc', 'abc', 'artist');
+insert into userd (id, mobile, a_role,address,email, name, password,user_type) values(3, 222222, 'dancer', 'ahmedabad', 'a@gamil.com', 'bcs', 'daiytsg', 'artist');
+insert into userd (id, mobile, a_role,address,email, name, password,user_type) values(4, 44444, 'musician', 'ahmedabad', 'a@gamil.com', 'def', 'dyfg', 'artist');
+insert into userd (id, mobile, a_role,address,email, name, password,user_type) values(5, 55555, NULL, 'ahmedabad', 'a@gamil.com', 'ttehgt', 'vfd', 'eventplanner');
+insert into userd (id, mobile, a_role,address,email, name, password,user_type) values(1, 66666, NULL, 'ahmedabad', 'a@gamil.com', 'fgh', 'hfhf', 'caterer');
