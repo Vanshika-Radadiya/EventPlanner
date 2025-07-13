@@ -1,0 +1,57 @@
+<!-- <p>chatbot works!</p> -->
+<app-navbar></app-navbar>
+
+<div class="chat-container">
+    <mat-card class="chat-box">
+      <mat-card-title style="background-color: #724892; color: aliceblue; padding: 5px; box-shadow: 0px 2px 20px 1px rgb(203, 160, 240);">&nbsp;🧐 Event Explorer</mat-card-title>
+      <mat-card-content class="chat-content"  #chatContent>
+        <div *ngFor="let message of messages" [ngClass]="{'user-message': message.user, 'bot-message': !message.user}">
+          {{ message.text }}
+        </div>
+      </mat-card-content>
+      <mat-card-actions class="chat-input">
+        <mat-form-field class="input-field"   appearance="outline">
+          <input matInput placeholder="Type a message..." [(ngModel)]="userInput" (keyup.enter)="sendMessage()">
+        </mat-form-field>
+        <button mat-icon-button color="primary" (click)="sendMessage()">
+          <mat-icon>send</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+
+  <div *ngIf="art?.length>0" class = "container">
+    <div *ngFor="let e of art" class="card" style="width: 18rem;">
+      <img src="../../assets/images/{{e.img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">{{e.performer.name}} </h3>
+        <p class="card-text">{{e.performer.a_role}}</p>
+        <button class="btn btn-primary" (click)="dis1(e)">View Details</button>      </div>
+    </div>
+</div>
+
+<div *ngIf="cat?.length>0" class = "container">
+  <div *ngFor="let e of cat" class="card" style="width: 18rem;">
+    <img src="../../assets/images/{{e.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{e.caterer.name}} </h3>
+      <h6 class="card-text">{{e.caterer.address}}</h6>
+      <p class="card-text">₹{{e.price}} /plate</p>
+      <button class="btn btn-primary" (click)="dis2(e)">View Details</button>
+    </div>
+  <!-- </div> -->
+</div>
+</div>
+
+<div *ngIf="evn?.length>0" class = "container ">
+  <div *ngFor="let e of evn" class="card" style="width: 18rem;">
+    <img src="../../assets/images/{{e.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{e.eventM.name}} </h3>
+      <h6 class="card-text">{{e.title}}<br>{{e.city}}</h6>
+      <p class="card-text">Budget: {{e.budget}}</p>
+      <button class="btn btn-primary" (click)="dis3(e)">View Details</button>
+    </div>
+  </div>
+  

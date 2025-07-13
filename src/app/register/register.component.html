@@ -1,0 +1,41 @@
+<div class = "page">
+<div class="container">
+<div class="welcome">
+<div class="pinkbox">
+	<div class="signup ">
+	<h1>register</h1>
+	<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" >
+		<input type="text" formControlName="name" placeholder="username" required >	
+		<input type="password" formControlName="password" placeholder="password" required >
+		<input type="email" formControlName="email" placeholder="email" required >
+		<input type="mobile" formControlName="mobile" placeholder="mobile" required >
+		<select formControlName="user_type" required >
+			<option value = "Customer">Customer</option>
+			<option value = "Caterer">Caterer</option>
+			<option value = "Event Manager">Event Manager</option>
+			<option value = "Artist - Singer">Artist - Singer</option>
+			<option value = "Artist - Dancer">Artist - Dancer</option>
+			<option value = "Artist - Anchor">Artist - Anchor</option>
+			<option value = "Artist - Musician">Artist - Musician</option>
+			<option value = "Artist - Magician">Artist - Magician</option>
+		</select>
+		<button type="submit" class="button submit">create account </button>
+	</form>
+	</div>
+	
+</div>
+
+<div class="rightbox">
+	<h2 class="title"><span>The</span><br>E-PLANNER</h2>
+	<p class="desc">unlock your dream <span>celebration</span></p>
+	<img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg"/>
+	<p class="account">Have an account?</p>
+	<!-- <a routerLink="/login"> -->
+		<button (click)="goToLogin()" class="button" id="signup">login</button>
+		<!-- </a> -->
+
+</div>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,125 @@
+
+<!-- <body>
+    <p>userdash works!</p>
+    <button [routerLink]="['/searchEvent','Birthday']" class="btn btn-primary">Birthday</button>
+    <button [routerLink]="['/searchEvent','Engagement']" class="btn btn-primary">Engagement</button>
+    <button [routerLink]="['/searchEvent','Wedding']" class="btn btn-primary">Wedding</button>
+    <button [routerLink]="['/searchEvent','Babyshower']" class="btn btn-primary">Baby Shower</button>
+</body> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EventPro</title>
+         <link rel="stylesheet" href="index.css"> 
+    </head>
+    -->
+    <body> 
+        
+        <section id="header">
+    <app-navbar></app-navbar>
+    <!-- Navigation
+    <nav class="navbar">
+        <div class="menu-container">
+            <div class="menu-left">
+                <a href="/" class="logo">
+                    <img src="../assets/logo.jpeg" height="70" width="70" />
+                </a>
+
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="menu-right">
+                <a href="">Profile</a>
+            </div>
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+    </nav> -->
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Making Your Special Moments <br> <span>Unforgettable</span></h1>
+        <p>Professional event planning services for life's most precious celebrations</p>
+        <button class="btn">Get Started</button>
+    </div>
+    <!-- Event Cards -->
+    <div class="cards">
+        <div class="card">
+            <div class="icon">
+                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path>
+                </svg>
+            </div>
+            <h3>Birthday Celebrations</h3>
+            <p>Create magical birthday moments that last forever</p>
+            <a [routerLink]="['/searchEvent','Birthday']">
+                Explore
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                </svg>
+            </div>
+            <h3>Baby Showers</h3><br>
+            <p>Welcome new life with joy and celebration</p>
+            <a [routerLink]="['/searchEvent','Babyshower']">
+                Explore
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+            </div>
+            <h3>Wedding Planning</h3>
+            <p>Your dream wedding, perfectly executed</p>
+            <a [routerLink]="['/searchEvent','Wedding']">
+                Explore
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+            </div>
+            <h3>Engagement Events</h3>
+            <p>Begin your journey with an unforgettable celebration</p>
+            <a [routerLink]="['/searchEvent','Engagement']">
+                Explore
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+</body>
+<!-- 
+</html> -->

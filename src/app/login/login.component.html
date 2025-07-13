@@ -1,0 +1,29 @@
+<div class = "page">
+<div class="container">
+	<div class="welcome">
+	<div class="pinkbox">
+		
+		<div class="signin">
+		<h1>sign in</h1>
+		<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+			<input type="text" formControlName="name" placeholder="username" required >	
+			<input type="password" formControlName="password" placeholder="password" >
+			<label for="remember">forgot password?</label>
+
+			<button type="submit"  class="button submit">login</button>
+		</form>
+		</div>
+	</div>
+	
+	<div class="rightbox">
+		<h2 class="title"><span>The</span><br>E-PLANNER</h2>
+		<p class="desc">unlock your dream <span>celebration</span></p>
+		<img class="flower" src="https://preview.ibb.co/jvu2Un/0057c1c1bab51a0.jpg"/>
+		<p class="account">don't have an account? </p>
+		
+			<button (click)="goToRegister()" class="button" id="signup">sign up</button>
+		
+	</div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,72 @@
+<!-- <p>display-event works!</p>
+<p>{{res.eventM.mobile}}</p>
+<p>{{res.city}}</p>
+<p>{{res.budget}}</p> -->
+
+
+<app-navbar></app-navbar>
+
+
+<div class="main-wrapper">
+    <div class="container">
+
+        <div class="product-div">
+            <div class="product-div-left">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../../assets/images/{{res.img}}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../assets/images/twwo.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../../assets/images/thhree.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="hover-container">
+                    <div><img src="../../assets/images/{{res.img}}"></div>
+                    <div><img src="../../assets/images/twwo.jpg"></div>
+                    <div><img src="../../assets/images/thhree.jpg"></div>
+                    <div><img src="../../assets/images/foour.jpg"></div>
+                </div>
+            </div>
+
+            <div class="product-div-right">
+                <span class="product-name">{{res.eventM.name}}</span>
+
+                <div class="product-rating">
+                    ★★★⯪☆
+                  <span>(350 ratings)</span>
+                </div>
+                <span class="product-price">{{res.discription}}</span>
+                <p> {{res.city}}</p>
+
+                    
+                <span class="product-price"> Budget: ₹{{res.budget}}</span>
+
+                <!-- <p class="product-description">
+                  {{res.description}}</p> -->
+                  <p class="product-description" [innerHTML]="res.description"></p>
+                <p class="product-description" > 📍 {{res.location}}</p>
+                
+                 
+                 
+                <div class="btn-groups">
+                  <button type="button" class="add-cart-btn" (click)="openEmail(res.eventM.email)">Inquire</button>
+                  <button type="button" class="buy-now-btn" (click)="openWhatsApp(res.eventM.mobile)">Chat🗪</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+

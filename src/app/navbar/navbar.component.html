@@ -1,0 +1,175 @@
+<!-- <html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <ul class="nav nav-tabs" style="background: #ffffff;">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/userdash']">Events</a>
+    </li>
+
+    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" (click)="a_role('singer')">Singer</button></li>
+            <li><button class="dropdown-item" (click)="a_role('dancer')">Dancer</button></li>
+            <li><button class="dropdown-item" (click)="a_role('anchor')">Anchor</button></li>
+            <li><button class="dropdown-item" (click)="a_role('musician')">Musician</button></li>
+            <li><button class="dropdown-item" (click)="a_role('magician')">Magician</button></li>
+          </ul>
+        </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/caterer']">Caterer</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Profile </a>
+    </li>
+  </ul>
+</body>
+
+</html>
+-->
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            font-family: Arial, sans-serif;
+        } */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #ffffff;
+            backdrop-filter: blur(5px);
+            padding: 5px 0;
+            z-index: 1000;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #9e84b0;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-grow: 1;
+        }
+
+
+        .nav-links:last-child {
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            margin: 0 1%;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #9e84b0;
+            text-align: left;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #444;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 100px;
+            z-index: 1;
+        }
+
+        .dropdown-content button {
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+        
+        .dropdown-content button:hover {
+            color: #9e84b0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<!-- <nav class="navbar">
+        <a ><img src="" alt="Logo" class="logo" width="10" height="10"></a>
+        <ul class="nav-links">
+            <li><a [routerLink]="['/userdash']">Events</a></li>
+            <li class="dropdown">
+                <a>Artist</a>
+                <ul class="dropdown-content">
+                  <li><button class="dropdown-item" (click)="a_role('singer')">Singer</button></li>
+                  <li><button class="dropdown-item" (click)="a_role('dancer')">Dancer</button></li>
+                  <li><button class="dropdown-item" (click)="a_role('anchor')">Anchor</button></li>
+                  <li><button class="dropdown-item" (click)="a_role('musician')">Musician</button></li>
+                  <li><button class="dropdown-item" (click)="a_role('magician')">Magician</button></li>
+                </ul>
+            </li>
+            <li><a [routerLink]="['/caterer']">Caterer</a></li>
+        </ul>
+       
+    </nav> -->
+
+<nav class="navbar">
+    <div class="menu-container">
+        <div class="menu-left">
+            <a href="/" class="logo">
+                <img src="../../assets/images/logo.png" height="50" width="50" />
+            </a>
+
+            <div class="nav-links">
+                <!-- <li><a [routerLink]="['/userdash']">Home</a></li> -->
+                <li><a [routerLink]="['/userdash']">Events</a></li>
+                <li class="dropdown">
+                    <a>Artist</a>
+                    <ul class="dropdown-content" type="none">
+                        <li><button class="dropdown-item" (click)="a_role('singer')">Singer</button></li>
+                        <li><button class="dropdown-item" (click)="a_role('dancer')">Dancer</button></li>
+                        <li><button class="dropdown-item" (click)="a_role('anchor')">Anchor</button></li>
+                        <li><button class="dropdown-item" (click)="a_role('musician')">Musician</button></li>
+                        <li><button class="dropdown-item" (click)="a_role('magician')">Magician</button></li>
+                    </ul>
+                </li>
+                <li><a [routerLink]="['/caterer']">Caterer</a></li>
+                <li><a [routerLink]="['/chatbot']">Explore with us</a></li>
+            </div>
+        </div>
+       
+
+        <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+</nav>

@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<!-- <body> -->
+<!-- <div class="container"> -->
+<div *ngIf="cat?.length>0" class = "container">
+    <div *ngFor="let e of cat" class="card" style="width: 18rem;">
+      <img src="../../assets/images/{{e.img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">{{e.caterer.name}} </h3>
+        <h6 class="card-text">{{e.caterer.address}}</h6>
+        <p class="card-text">₹{{e.price}} /plate</p>
+        <button class="btn btn-primary" (click)="dis(e)">View Details</button>
+      </div>
+    <!-- </div> -->
+  </div>
+</div>
+<!-- </body> -->

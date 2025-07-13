@@ -1,0 +1,99 @@
+<!-- <p>display-caterer works!</p>
+<p>{{res.menu}}</p>
+<p>{{res.price}}</p>
+<p>{{res.caterer.address}}</p>
+<html> -->
+
+<!-- <head>
+    <title>Bootstrap Carousel</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+    </style>
+</head> -->
+
+
+
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+    <!-- Indicators -->
+    
+
+    <app-navbar></app-navbar>
+
+
+    <div class="main-wrapper">
+        <div class="container">
+
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../../assets/images/{{res.img}}" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../../assets/images/four1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../../assets/images/two1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <div class="hover-container">
+                        <div><img src="../../assets/images/{{res.img}}"></div>
+                        <div><img src="../../assets/images/two1.jpg"></div>
+                        <div><img src="../../assets/images/three1.jpg"></div>
+                        <div><img src="../../assets/images/four1.jpg"></div>
+                    </div>
+                </div>
+
+                <div class="product-div-right">
+                    <span class="product-name">{{res.caterer.name}}</span>
+                    <div class="product-rating">
+                      ★★★⯪☆
+                      <span>(350 ratings)</span>
+                    </div>
+                    <span class="product-price">₹{{res.price}} per plate</span>
+                    <p class="me-p">Menu: {{res.menu}}</p>
+                    <!-- <p class="product-description">
+                      {{res.description}}</p> -->
+                      <p class="product-description" [innerHTML]="res.description"></p>
+
+                      <p class="me-p"> 📍{{res.caterer.address}}</p>
+
+                    <div class="btn-groups">
+                        <button type="button" class="add-cart-btn" (click)="openEmail(res.caterer.email)">Inquire</button>
+                        <button type="button" class="buy-now-btn" (click)="openWhatsApp(res.caterer.mobile)">Chat🗪</button>
+                    </div>
+
+      
+
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <!-- Left and right controls -->
+
+    <!-- <script src="script.js"></script> -->

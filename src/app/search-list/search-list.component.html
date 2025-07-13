@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="page">
+<div class ="searchbox">
+<form class="form-inline my-2 my-lg-0" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <input class="form-control mr-sm-2" type="text" formControlName = "searchCity"placeholder="Search city in Gujarat" aria-label="Search">
+    <button class="sbtn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+</div>
+  <div *ngIf="evn?.length>0" class = "container ">
+  <div *ngFor="let e of evn" class="card" style="width: 18rem;">
+    <img src="../../assets/images/{{e.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{e.eventM.name}} </h3>
+      <h6 class="card-text">{{e.title}}<br>{{e.city}}</h6>
+      <p class="card-text">Budget: {{e.budget}}</p>
+      <button class="btn btn-primary" (click)="dis(e)">View Details</button>
+    </div>
+  </div>
+  </div>
+</div >

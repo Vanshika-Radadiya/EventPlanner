@@ -1,0 +1,68 @@
+<!-- <p>display-event works!</p>
+<p>{{res.eventM.mobile}}</p>
+<p>{{res.city}}</p>
+<p>{{res.budget}}</p> -->
+
+
+<app-navbar></app-navbar>
+
+
+<div class="main-wrapper">
+    <div class="container">
+
+        <div class="product-div">
+            <div class="product-div-left">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../../assets/images/{{res.img}}" class="d-block w-100" alt="...">
+                      </div>
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="hover-container">
+                    <div><img src="../../assets/images/{{res.img}}"></div>
+                    <!-- <div><img src="../../assets/images/two1.jpg"></div>
+                    <div><img src="../../assets/images/three1.jpg"></div>
+                    <div><img src="../../assets/images/four1.jpg"></div> -->
+                </div>
+            </div>
+
+            <div class="product-div-right">
+                <span class="product-name">{{res.performer.name}} <sub>({{res.performer.a_role}})</sub></span>
+
+                <div class="product-rating">
+                    ★★★⯪☆
+                  <span>(350 ratings)</span>
+                </div>
+                
+
+        
+                <span class="product-price"> ₹ {{res.budget}}</span>
+
+                <!-- <p class="product-description">
+                  {{res.description}}</p> -->
+                  <p class="product-description" [innerHTML]="res.description"></p>
+                
+                 
+                 
+                <div class="btn-groups">
+                  <button type="button" class="add-cart-btn" (click)="openEmail(res.performer.email)">Inquire</button>
+                  <button type="button" class="buy-now-btn" (click)="openWhatsApp(res.performer.mobile)">Chat🗪</button>
+                    <!-- <button mat-icon-button color="primary" (click)="openWhatsApp()">
+                      <mat-icon>chat</mat-icon>
+                    </button> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
